@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    background-color: white !important;
+    width: 100%;
+    z-index: 200;
+    border-bottom: black 1px solid;
+}
+.landing {
+    background-image: url('Images/plane.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin-top: 20px;
+
+    
+}
+
+.input-group-btn {
+    background-color: white;
+}
+
+#searchinput {
+margin: 0 auto;
+justify-content: center;
+
+}
+.logo {
+width: 124px;
+height: 44px;
+margin-left: 30px;
+}
+
+.departures {
+    background-color: #979797 !important;
+}
+
+
+/* placeholer of the search bar */
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 12px;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 12px;
+ }
+ 
+ :-ms-input-placeholder {
+       font-size: 12px;
+ }
