@@ -94,7 +94,7 @@ margin-left: 30px;
  		-webkit-transform: scale(1)
  	}
  }
- 
+
  @keyframes zoom {
  	from {
  		transform: scale(0)
@@ -103,4 +103,12 @@ margin-left: 30px;
  		transform: scale(1)
  	}
  }
+
+ #nikopic {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+
+ #nikopic:hover {opacity: 0.7;}
  /* End of Niko's JS attempt */
