@@ -40,10 +40,11 @@ function search(searchWord) {
         },
         success: function(data) {
             if (data.flights[0].flightDirection = "D") {
-                for (let i = 0, ) => // Finish the loop
-                    function appendToResults(data.flights[0]) {
+                for (let i = 0; i < data.length; i++) { // Finish the loop
+                    appendToResults(data.flights[0]); {
                         results.push(data);
                     };
+                };
                 console.log("This is a check if it is working");
                 console.log(results);
             };
