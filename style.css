@@ -12,9 +12,13 @@ body {
 }
 
 .navbar {
+/*making an overflow, so it is fixed, why does whole navbar floats right??? - NILS */
+/*    overflow: hidden; */
+/*    position: fixed; */
+/*    top: 0; */
     background-color: white !important;
     width: 100%;
-    z-index: 200;
+    z-index: 1000;
     border-bottom: #EDEBEB 1px solid;
 }
 
@@ -81,7 +85,7 @@ h5 {
 }
 
 
-/* placeholer of the search bar */
+/* placeholder of the search bar */
 
 ::-webkit-input-placeholder {
     font-size: 12px;
