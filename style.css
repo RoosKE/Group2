@@ -149,3 +149,9 @@ height: 44px;
 
  #nikopic:hover {opacity: 0.7;}
  /* End of Niko's JS attempt */
+
+
+ @media screen and (max-width: 991px){
+    .navbar-nav li a {text-align:center;
+    margin-right: 16px;}
+  }
