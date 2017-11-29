@@ -63,8 +63,15 @@ function search(searchWord) {
             "ResourceVersion": "v3"
         },
         success: function(data) {
-            console.log("Ja alles is goed dit is de data:");
-            console.log(data.scheduleDate, data.scheduleTime, data.destinations, data.flightName, data.prefixICAO);
+            if (data.flights[0].flightDirection = "D") {
+                for (let i = 0; i < data.length; i++) { // Finish the loop
+                    appendToResults(data.flights[0]); {
+                        results.push(data);
+                    };
+                };
+                console.log("This is a check if it is working");
+                console.log(results);
+            };
         },
         error: function(xhr, error, msg) {
             console.log("Kut er ging wat fout");
@@ -80,8 +87,15 @@ function search(searchWord) {
             "ResourceVersion": "v3"
         },
         success: function(data) {
-            console.log("Ja alles is goed dit is de data:");
-            console.log(data.scheduleDate, data.scheduleTime, data.destinations, data.flightName, data.prefixICAO);
+            if (data.flights[0].flightDirection = "D") {
+                for (let i = 0; i < data.length; i++) { // Finish the loop
+                    appendToResults(data.flights[0]); {
+                        results.push(data);
+                    };
+                };
+                console.log("This is a check if it is working");
+                console.log(results);
+            };
         },
         error: function(xhr, error, msg) {
             console.log("Kut er ging wat fout");
