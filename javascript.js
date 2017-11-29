@@ -74,7 +74,7 @@ function search(searchWord) {
             };
         },
         error: function(xhr, error, msg) {
-            console.log("Kut er ging wat fout");
+            console.log("IT'S GOING WRONG");
             console.log(error);
             console.log(msg);
         }
@@ -98,7 +98,7 @@ function search(searchWord) {
             };
         },
         error: function(xhr, error, msg) {
-            console.log("Kut er ging wat fout");
+            console.log("IT'S GOING WRONG");
             console.log(error);
             console.log(msg);
         }
