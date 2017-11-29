@@ -1,12 +1,13 @@
 $(() => {
+
+
 function openOverlay(a, b) {
   singleToggle(a, b);
-  singleToggle(b, b);
-};
+}
 
-openOverlay($())
+openOverlay($('#nikog'),$("#overlaynikoid"));
 
-
+$("#nikog").slideToggle();
 
 // API PART not done yet!!! But to show you what is going on
 let results = [];
