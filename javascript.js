@@ -1,3 +1,23 @@
+$(()=> {
+  $("form[name='forma']").validate({
+  errorClass: "my-error-class",
+  validClass: "my-valid-class",
+    rules: {
+      firstname: "required",
+      yourmessage: "required",
+
+    email: {
+      required: true,
+      email: true
+      },
+    },
+    messages: {
+      firstname: "Please enter your firstname!",
+      yourmessage: "Please type your message!",
+      email: "Please fill in your email adress"
+    },
+})
+
 // Get Niko's image and insert it in the modal
 var modal = document.getElementById("myModal");
 var img = document.getElementById("nikopic");
@@ -27,3 +47,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+})
