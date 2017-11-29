@@ -120,11 +120,16 @@ h5 {
 }
 /* End of Nils' Twitter Design */
 
+#carouselExampleIndicators {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Starting here, Niko's JS attempt*/
 
 .modal {
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     left: 0;
     right: 0;
     padding-top: 100px;
@@ -133,6 +138,7 @@ h5 {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
+    display: none;
 }
 
 .modal-content {
@@ -140,8 +146,6 @@ h5 {
     display: block;
     width: 80%;
     max-width: 700px;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-content,
