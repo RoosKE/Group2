@@ -1,12 +1,17 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
+.header {
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+
 .navbar {
-/*making an overflow, so it is fixed, why does whole navbar floats right??? - NILS */
-/*    overflow: hidden; */
-/*    position: fixed; */
-/*    top: 0; */
     background-color: white !important;
     width: 100%;
     z-index: 1000;
