@@ -110,7 +110,13 @@ h5 {
   font-style: oblique;
   color: blue;
   text-align: center;
+  padding: 180px 0;
+  border: 3px solid blue;
   background-color: grey;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
 }
 /* End of Nils' Twitter Design */
 
