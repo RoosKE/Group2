@@ -104,7 +104,15 @@ h5 {
     font-size: 12px;
     color: #EDEBEB;
 }
-
+/* Starting here, Nils' Twitter Design */
+#twitter {
+  float: inherit;
+  font-style: oblique;
+  color: blue;
+  text-align: center;
+  background-color: grey;
+}
+/* End of Nils' Twitter Design */
 
 /* Starting here, Niko's JS attempt*/
 
