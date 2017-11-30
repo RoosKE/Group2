@@ -212,6 +212,21 @@ h5 {
     }
 }
 
+.col-centered{
+   float: none;
+   margin: 0 auto;
+}
+
+.carousel-caption {
+	background-color: rgba(25, 25, 25, 0.6);
+	width: 30%;
+	margin: auto;
+}
+
+.carousel-caption p {
+  color: white;
+}
+
 #nikopic {
     /* Starting here, Niko's JS attempt*/
     border-radius: 5px;
