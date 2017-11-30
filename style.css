@@ -135,10 +135,9 @@ h5 {
 
 .col-centered {
   gloat: none;
-  margin auto;
+  margin: auto;
 }
 
-<<<<<<< HEAD
 .modal-content {
     margin: auto;
     display: block;
@@ -201,10 +200,9 @@ h5 {
 }
 
 #nikopic {
-=======
 /* Starting here, Niko's JS attempt*/
 #nikog {
->>>>>>> ae789b1d99e68f750c3427797611e02023d9074b
+
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
