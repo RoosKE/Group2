@@ -18,10 +18,10 @@ body {
 
 .header {
     overflow: hidden;
-    position: fixed;
     z-index: 1;
     width: 100%;
     top: 0;
+    position: fixed;
 }
 
 .navbar {
