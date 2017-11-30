@@ -12,9 +12,9 @@ $(() => {
             },
         },
         messages: {
-            firstname: "Please enter your firstname!",
+            firstname: "Please enter your name!",
             yourmessage: "Please type your message!",
-            email: "Please fill in your emnail adress"
+            email: "Please fill in your email address"
         },
 
     });
