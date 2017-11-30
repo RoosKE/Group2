@@ -35,4 +35,32 @@ $(() => {
       $("#cookieoverlayid").hide();
     });
 
+    //Team starts here //
+    $(".close").on("click", () => {
+      $(".teamoverlay").hide();
+    });
+
+    $("#niko").on("click", () => {
+      $("#overlayniko").show(500);
+    });
+
+    $("#roos").on("click", () => {
+      $("#overlayroos").show(500);
+    });
+
+    $("#simonas").on("click", () => {
+      $("#overlaysimonas").show(500);
+    });
+
+    $("#rosanne").on("click", () => {
+      $("#overlayrosanne").show(500);
+    });
+
+    $("#nils").on("click", () => {
+      $("#overlaynils").show(500);
+    });
+
+
+
+
 });
