@@ -1,3 +1,4 @@
+
 $(()=> {
   $("form[name='forma']").validate({
   errorClass: "my-error-class",
@@ -36,10 +37,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-//Close modal with X
-span.onclick = function() {
-    modal.style.display = "none";
+$(() => {
+
+
+function openOverlay(a, b) {
+  singleToggle(a, b);
 }
+
 
 // Close modal with window click
 window.onclick = function(event) {
@@ -53,6 +57,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+
+openOverlay($('#nikog'),$("#overlaynikoid"));
+
+$("#nikog").slideToggle();
+
 // API PART not done yet!!! But to show you what is going on
 let results = [];
 
@@ -130,3 +139,5 @@ function search(searchWord) {
         }
     });
 };
+});
+
