@@ -165,9 +165,10 @@ h5 {
     transform: translate(25%, 0);
 }
 
-:-moz-placeholder .form-control {
-    font-size: 20px;
+.aftersubmit {
+    display: none;
 }
+
 .contactus h1 {
     text-align: center;
 }
@@ -179,6 +180,13 @@ h5 {
     border-top-right-radius: 100% 150px;
     border-top-left-radius: 100% 150px;
     border-bottom-right-radius: 100% 150px;
+}
+
+.my-error-class {
+    color: red;
+}
+.my-valid-class {
+    color: green;
 }
 
 @-webkit-keyframes zoom {

@@ -1,23 +1,35 @@
-
 $(()=> {
-  $("form[name='forma']").validate({
-  errorClass: "my-error-class",
-  validClass: "my-valid-class",
-    rules: {
-      firstname: "required",
-      yourmessage: "required",
+  $("form[name='contact-form']").validate({
+    errorClass: "my-error-class",
+    validClass: "my-valid-class",
+  rules: {
+    firstname: "required",
+    yourmessage: "required",
 
     email: {
       required: true,
       email: true
-      },
     },
-    messages: {
-      firstname: "Please enter your firstname!",
-      yourmessage: "Please type your message!",
-      email: "Please fill in your email adress"
+  },
+  messages: {
+    firstname: "Please enter your firstname!",
+    yourmessage: "Please type your message!",
+    email: "Please fill in your emnail adress"
     },
-})
+
+  });
+
+  $(".submitbutton").on('click', (event)=> {
+    event.preventDefault();
+  if ($('#cform').valid()) {
+    $(".form-group").hide();
+    $("#send").hide();
+    $(".aftersubmit").show();
+        setTimeout(function() {
+            $(".aftersubmit").css('display', 'none');
+        }, 5000);
+    };
+  });
 
 // Get Niko's image and insert it in the modal
 var modal = document.getElementById("myModal");
