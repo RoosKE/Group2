@@ -3,21 +3,6 @@ $(() => {
 
     let results = [i];
 
-<<<<<<< HEAD
-function search(searchWord) {
-    $.ajax({
-        url: "https://api.schiphol.nl/public-flights/flights?app_id=8d8f7e2a&app_key=e8903a8da89481aaf3fc5da7a2faf7bf&flightdirection=D&airline=" + searchWord + "&includedelays=false&page=0&sort=%2Bscheduletime",
-        method: "GET",
-        contentType: "application/json; charset=UTF-8",
-        headers: {
-            "Accept": "application/json",
-            "ResourceVersion": "v3"
-        },
-        success: function(data) {
-            for (let i = 0; i < data.length; i++) {
-                appendToResults(data.flights[0]); {
-                    results.push(data);
-=======
     function search(searchWord) {
         $.ajax({
             url: "https://api.schiphol.nl/public-flights/flights?app_id=8d8f7e2a&app_key=e8903a8da89481aaf3fc5da7a2faf7bf&flightdirection=D&airline=" + searchWord + "&includedelays=false&page=0&sort=%2Bscheduletime",
@@ -34,7 +19,6 @@ function search(searchWord) {
                     };
                     console.log("This is a check if it is working");
                     console.log(results);
->>>>>>> bce9fa4a0f5bcb988dfa3d39dcf3663bebc0e5ea
                 };
             },
             error: function(xhr, error, msg) {
@@ -93,3 +77,5 @@ function search(searchWord) {
     };
     search()
 });
+
+console.log("this sucks");
