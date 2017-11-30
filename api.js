@@ -14,9 +14,7 @@ function search(searchWord) {
         },
         success: function(data) {
             for (let i = 0; i < data.length; i++) {
-                appendToResults(data.flights[i]); {
                 appendToResults(data.flights[0]); {
-
                     results.push(data);
                 };
                 console.log("This is a check if it is working");
