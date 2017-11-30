@@ -135,11 +135,82 @@ h5 {
 
 .col-centered {
   gloat: none;
-  margin auto;
+  margin: auto;
 }
 
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.form-control {
+    width: 50%;
+}
+
+.contact {
+    top: 50%;
+    right: 50%;
+    transform: translate(25%, 0);
+}
+
+.aftersubmit {
+    display: none;
+}
+
+.contactus h1 {
+    text-align: center;
+}
+
+.contactus {
+    background-color: #EDEBEB;
+    padding: 30px 0;
+    border-bottom-left-radius: 100% 150px;
+    border-top-right-radius: 100% 150px;
+    border-top-left-radius: 100% 150px;
+    border-bottom-right-radius: 100% 150px;
+}
+
+.my-error-class {
+    color: red;
+}
+.my-valid-class {
+    color: green;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+#nikopic {
 /* Starting here, Niko's JS attempt*/
 #nikog {
+
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
