@@ -28,20 +28,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">All Flights <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html" id="click1">All Flights <span class="sr-only">(current)</span></a>
                         </li>
                         <!--Too little information for delays from API-->
                         <!--<li class="nav-item">
                             <a class="nav-link" href="delays.html">Delays</a>
                         </li>-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#head5">News</a>
+                            <a class="nav-link" href="#head5" id="click2">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#beforecontactus">Contact</a>
+                            <a class="nav-link" href="#beforecontactus" id="click3">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#theteam">About</a>
+                            <a class="nav-link" href="#theteam" id="click4">Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="indexDE.html">
@@ -56,23 +56,19 @@
     <!-- Here is  our search bar and buttons for departures and arrivals -->
     <div class="container landing">
         <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
-            <input class="form-control rounded-0 py-2" type="text" id="search" placeholder="Enter date (year-month-day), flight number, or airline" value="">
+            <input class="form-control rounded-0 py-2" type="text" id="search" placeholder="Enter time (HH:mm) or flightname" value="">
             <span class="input-group-btn">
               <button class="btn btn-outline-secondary" type="button">
                 <i class="fa fa-search"></i>
               </button>
             </span>
         </div>
-        <!-- <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
-            <span class="input-group-btn">
-                  <button class="btn btn-outline-secondary" id="allFlights" type="button">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </span>
-        </div> -->
+        <div class="btn-group" role="group" aria-label="Basic example">
+             <button type="button" id="allFlights" class="btn btn-secondary departure">All Flights  <i class="fa fa-search"></i></button>
+         </div>
     </div>
     <!-- Here goes our table where we will put API -->
-    <section class="container">
+    <section class="container" id="flightsclick">
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -108,10 +104,10 @@
         </table>
         <div id="paginator"></div>
     </section>
-    <section class="departures">
-        <div class="container finddepartures">
-            <h5 id="head5">What information do you need at Schiphol?</h5>
-            <p>Here you can find the most useful information about your flight. You don't have to look for the announcement boards or wait until the system has updated anymore. This website will provide you with the most accurate and up-to-date informaiton.
+    <section class="departures" >
+        <div class="container finddepartures" id="newsclick">
+            <h5 id="head5"><strong>What information do you need at Schiphol?</strong></h5>
+            <p id="head5p">Here you can find the most useful information about your flight. You don't have to look for the announcement boards or wait until the system has updated anymore. This website will provide you with the most accurate and up-to-date informaiton.
                 Find the departure time of a flight at Schiphol, by entering the destination, flight number or airline. In the list of results, you will find the most current flight information of the departing flight you are looking for. If you're not
                 satisfied or want to get in touch with Schiphol Airport, you can twitter with #schiphol or send us an request through the contact form. Hopefully you will enjoy the website and we would love to see you again next time you're flying from
                 Schiphol! </p>
@@ -121,6 +117,7 @@
     <br>
     <!-- Twitter API from Rosanne//-->
     <br>
+    <h1 id="twitterheader">Latest news from Twitter</h1>
     <div id="twitter">
         <a class="twitter-timeline" href="https://twitter.com/hashtag/schiphol" data-widget-id="936285336245882880">#schiphol Tweets</a>
         <script>
@@ -215,7 +212,7 @@
                 <button type="submit" class="btn btn-primary submitbutton" id="send">Send message</button>
                 <div class="container aftersubmit">
                     <div>
-                        <p>Thank you, we will get back to you within 24 hours.</p>
+                        <p id="reservationconfirmation">Thank you, we will get back to you within 24 hours.</p>
                     </div>
                 </div>
             </form>
@@ -235,7 +232,7 @@
             MSc Business Information Management
         </h6>
         <h6>
-            *15.11.1993
+            From Breda
         </h6>
     </div>
 
@@ -346,13 +343,13 @@
     <br>
     <br>
 
-    <!-- Cookie
+
     <div class="container">
 <div class="cookieoverlay" id="cookieoverlayid">
    <br><br>
 <div class="cookietext">
    <h2>Privacy Policy</h2>
-This privacy policy is for this website [**COMPANY WEBSITE**] and served by [**COMPANY NAME**] and governs the privacy of its users who choose to use it. <br><br>
+This privacy policy is for this website [IAmFlyingAwayToday] and served by [IAmFlyingAwayToday] and governs the privacy of its users who choose to use it. <br><br>
 
 The policy sets out the different areas where user privacy is concerned and outlines the obligations and requirements of the users, the website and website owners. Furthermore the way this website processes, stores and protects user data and information will also be detailed within this policy.
 
@@ -367,7 +364,7 @@ This website uses cookies to better the users experience while visiting the webs
 <button class="btn btn-primary" id="cookiebtn">I ACCEPT</button>
 </div>
 </div>
-<!- End of Cookie //-->
+
 
     <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -378,6 +375,7 @@ This website uses cookies to better the users experience while visiting the webs
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <script src="api.js"></script>
+    <script src="animate.js"></script>
 </body>
 
 

@@ -31,6 +31,14 @@ body {
     border-bottom: #EDEBEB 1px solid;
 }
 
+#head5 {
+  font-size: 20px;
+}
+
+#head5p {
+  font-size: 18px;
+}
+
 .landing {
     position: relative;
     background-image: url('http://preview.ibb.co/cdssPb/plane_airplane_passenger_airliner_height_sky_flight_sea_lights_airport_town_night_beautiful_background_blur_bokeh_wallpaper.jpg');
@@ -49,6 +57,21 @@ body {
     background-color: white;
 }
 
+#twitterheader {
+  text-align: center;
+  color: #0084b4;
+}
+
+#theteam h4 {
+  color: black;
+}
+
+#reservationconfirmation {
+  text-align: center;
+  font-size: 14px;
+  padding-right: 570px;
+}
+
 .btn-secondary {
     background-color: #EDEBEB;
     height: 50px;
@@ -61,6 +84,10 @@ body {
 
 .departure {
     background-color: white;
+}
+
+section .departures {
+  b
 }
 
 p {
@@ -129,7 +156,7 @@ h5 {
     color: #0084b4;
     text-align: center;
     border: 3px solid #0084b4;
-    width: 40%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     height: 360px;
@@ -429,6 +456,7 @@ h4 {
   width: 60%;
   margin: auto;
   color: white;
+  border-style: solid;
 }
 
 #cookiebtn {

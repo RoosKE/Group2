@@ -27,20 +27,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Alle Flüge <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html" id="click1">Alle Flüge <span class="sr-only">(current)</span></a>
                         </li>
                         <!--Too little information for delays from API-->
                         <!--<li class="nav-item">
                             <a class="nav-link" href="delays.html">Delays</a>
                         </li>-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#head5">News</a>
+                            <a class="nav-link" href="#head5" id="click2">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#beforecontactus">Kontakt</a>
+                            <a class="nav-link" href="#beforecontactus" id="click3">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#theteam">Über uns</a>
+                            <a class="nav-link" href="#theteam" id="click4">Über uns</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">
@@ -53,14 +53,19 @@
         </nav>
     </header>
     <!-- Here is  our search bar and buttons for departures and arrivals -->
-    <div class="container landing">
-        <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
-            <input class="form-control rounded-0 py-2" type="text" id="search" placeholder="Gib dein Datum (Jahr-Monat-Tag), Flugnummer, oder Airline ein" value="">
-            <span class="input-group-btn">
-              <button class="btn btn-outline-secondary" type="button">
-                <i class="fa fa-search"></i>
-              </button>
-            </span>
+             <div class="container landing">
+                 <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
+                     <input class="form-control rounded-0 py-2" type="text" id="search" placeholder="Gib die Zeit ein (HH:mm) oder Flug" value="">
+                     <span class="input-group-btn">
+                       <button class="btn btn-outline-secondary" type="button">
+                         <i class="fa fa-search"></i>
+                       </button>
+                     </span>
+                 </div>
+                 <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" id="allFlights" class="btn btn-secondary departure" id="flightsclicks">Alle Flüge  <i class="fa fa-search"></i></button>
+                  </div>
+             </div>
             <!-- <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
             <span class="input-group-btn">
                   <button class="btn btn-outline-secondary" id="allFlights" type="button">
@@ -108,8 +113,8 @@
             </table>
         </section>
         <section class="departures">
-            <div class="container finddepartures">
-                <h5 id="head5">Aktuelle Ablugs- und Ankunftszeiten in Schiphol</h5>
+            <div class="container finddepartures" id="newsclick">
+                <h5 id="head5">Aktuelle Flugzeiten in Schiphol</h5>
                 <p>Hier finden Sie die nützlichsten Informationen zu Ihrem Flug. Sie müssen nicht nach den Anzeigetafeln suchen oder warten, bis das System aktualisiert wurde. Auf dieser Website erhalten Sie die genauesten und aktuellsten Informationen.
                     Finden Sie die Abflugszeit in Schiphol, indem Sie Ziel, Flugnummer oder Fluggesellschaft eingeben. In der Ergebnisliste finden Sie die aktuellsten Fluginformationen, welche Sie suchen. Wenn Sie unzufrieden sind oder mit dem Flughafen
                     Schiphol in Kontakt treten möchten, können Sie mit #schiphol twittern oder uns eine Anfrage über das Kontaktformular senden. Hoffentlich werden Sie die Webseite genießen und wir würden uns freuen, Sie beim nächsten Mal wiederzusehen.</p>
@@ -234,7 +239,7 @@
                 MSc Business Information Management
             </h6>
             <h6>
-                *15.11.1993
+                Aus Breda
             </h6>
         </div>
 
@@ -377,6 +382,7 @@ This website uses cookies to better the users experience while visiting the webs
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script src="javascript.js"></script>
         <script src="api.js"></script>
+        <script src="animate.js"></script>
 </body>
 
 
