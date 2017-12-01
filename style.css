@@ -74,6 +74,20 @@ h5 {
     font: 14px "Lucida Grande";
 }
 
+h4 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #6B5F5F;
+    font: 18px "Lucida Grande";
+}
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #6B5F5F;
+    font: 18px "Lucida Grande";
+}
+
 #searchinput {
     position: absolute;
     top: 50%;
@@ -96,6 +110,8 @@ h5 {
     background-color: #EDEBEB !important;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 115px;
+    margin-right: 115px;
 }
 
 
@@ -239,7 +255,7 @@ form {
 }
 
 .theteam h4 {
-  font-size: 80%;
+  font-size: 50%;
 }
 
 #teamgrid {
@@ -281,7 +297,7 @@ form {
   border-radius: 50%;
   margin: auto;
   border-style: solid;
-  border-color: #0084b4;
+  border-color: #6B5F5F;
   display: block;
 }
 
