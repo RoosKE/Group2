@@ -255,13 +255,14 @@ h5 {
 /* Team design */
 .theteam {
   text-align: center;
+  font-size: 30px;
   width: 70%;
   margin: auto;
   color: #0084b4;
 }
 
 .theteam h4 {
-  font-size: 93%;
+  font-size: 80%;
 }
 
 #teamgrid {
