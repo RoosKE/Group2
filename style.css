@@ -118,7 +118,7 @@ h5 {
 }
 
 
-/* Starting here, Nils' Twitter Design */
+/* Starting here, Nils' Twitter Design
 
 #twitter {
     float: inherit;
@@ -132,8 +132,18 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     height: 400px;
+}*/
+#twitter {
+    float: inherit;
+    font-style: oblique;
+    color: #0084b4;
+    text-align: center;
+    border: 3px solid #0084b4;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
 }
-
 
 /* End of Nils' Twitter Design */
 
@@ -184,6 +194,15 @@ h5 {
     border-top-right-radius: 100% 150px;
     border-top-left-radius: 100% 150px;
     border-bottom-right-radius: 100% 150px;
+    color: #0084b4;
+}
+
+#cform {
+  color: #0084b4;
+}
+
+#send {
+  background-color: #0084b4;
 }
 
 .my-error-class {
