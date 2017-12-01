@@ -63,21 +63,28 @@
               </button>
             </span>
         </div>
+        <!-- <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
+            <span class="input-group-btn">
+                  <button class="btn btn-outline-secondary" id="allFlights" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+        </div> -->
     </div>
     <!-- Here goes our table where we will put API -->
     <section class="container">
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th scope="col">Local time</th>
-                    <th scope="col">Destination</th>
-                    <th scope="col">Flight</th>
-                    <th scope="col">Airline</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Flight name</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Terminal</th>
+                    <th scope="col">Gate</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tbody id="testas"></tbody>
+                <!-- <tr>
                     <th scope="row">1</th>
                     <td>Stockholm</td>
                     <td>KL123124</td>
@@ -96,9 +103,10 @@
                     <td colspan="2">Kaunas</td>
                     <td>KLM</td>
                     <td>asdsad</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
+        <div id="paginator"></div>
     </section>
     <section class="departures">
         <div class="container finddepartures">
@@ -111,7 +119,6 @@
 
     </section>
     <br>
-
     <!-- Twitter API from Rosanne//-->
     <br>
     <div id="twitter">

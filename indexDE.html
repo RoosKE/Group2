@@ -61,78 +61,85 @@
                 <i class="fa fa-search"></i>
               </button>
             </span>
+            <!-- <div class="input-group col-md-6 col-sm-8 col-8" id="searchinput">
+            <span class="input-group-btn">
+                  <button class="btn btn-outline-secondary" id="allFlights" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+        </div> -->
         </div>
     </div>
     <!-- Here goes our table where we will put API -->
     <section class="container">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Ortszeit</th>
-                    <th scope="col">Ziel</th>
-                    <th scope="col">Flug</th>
-                    <th scope="col">Airline</th>
-                    <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Stockholm</td>
-                    <td>KL123124</td>
-                    <td>KLM</td>
-                    <td>asdfa</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>London</td>
-                    <td>KL121245</td>
-                    <td>KLM</td>
-                    <td>asddas</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Kaunas</td>
-                    <td>KLM</td>
-                    <td>asdsad</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section class="departures">
-        <div class="container finddepartures">
-            <h5 id="head5">Aktuelle Ablugs- und Ankunftszeiten in Schiphol</h5>
-            <p>Hier finden Sie die nützlichsten Informationen zu Ihrem Flug. Sie müssen nicht nach den Anzeigetafeln suchen oder warten, bis das System aktualisiert wurde. Auf dieser Website erhalten Sie die genauesten und aktuellsten Informationen.
-                Finden Sie die Abflugszeit in Schiphol, indem Sie Ziel, Flugnummer oder Fluggesellschaft eingeben. In der Ergebnisliste finden Sie die aktuellsten Fluginformationen, welche Sie suchen. Wenn Sie unzufrieden
-                sind oder mit dem Flughafen Schiphol in Kontakt treten möchten, können Sie mit #schiphol twittern oder uns eine Anfrage über das Kontaktformular senden. Hoffentlich werden Sie die Webseite genießen und wir würden uns freuen, Sie beim nächsten Mal wiederzusehen.
-            </p>
+        <section class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Flug</th>
+                        <th scope="col">Zeit</th>
+                        <th scope="col">Terminal</th>
+                        <th scope="col">Gate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tbody id="testas"></tbody>
+                    <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Stockholm</td>
+                        <td>KL123124</td>
+                        <td>KLM</td>
+                        <td>asdfa</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>London</td>
+                        <td>KL121245</td>
+                        <td>KLM</td>
+                        <td>asddas</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Kaunas</td>
+                        <td>KLM</td>
+                        <td>asdsad</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+        <section class="departures">
+            <div class="container finddepartures">
+                <h5 id="head5">Aktuelle Ablugs- und Ankunftszeiten in Schiphol</h5>
+                <p>Hier finden Sie die nützlichsten Informationen zu Ihrem Flug. Sie müssen nicht nach den Anzeigetafeln suchen oder warten, bis das System aktualisiert wurde. Auf dieser Website erhalten Sie die genauesten und aktuellsten Informationen.
+                    Finden Sie die Abflugszeit in Schiphol, indem Sie Ziel, Flugnummer oder Fluggesellschaft eingeben. In der Ergebnisliste finden Sie die aktuellsten Fluginformationen, welche Sie suchen. Wenn Sie unzufrieden sind oder mit dem Flughafen
+                    Schiphol in Kontakt treten möchten, können Sie mit #schiphol twittern oder uns eine Anfrage über das Kontaktformular senden. Hoffentlich werden Sie die Webseite genießen und wir würden uns freuen, Sie beim nächsten Mal wiederzusehen.</p>
+            </div>
+
+        </section>
+        <br>
+
+        <!-- Twitter API from Rosanne//-->
+        <br>
+        <div id="twitter">
+            <a class="twitter-timeline" href="https://twitter.com/hashtag/schiphol" data-widget-id="936285336245882880">#schiphol Tweets</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+            </script>
         </div>
+        <br>
+        <br id="beforecontactus">
+        <br>
 
-    </section>
-    <br>
-
-    <!-- Twitter API from Rosanne//-->
-    <br>
-    <div id="twitter">
-        <a class="twitter-timeline" href="https://twitter.com/hashtag/schiphol" data-widget-id="936285336245882880">#schiphol Tweets</a>
-        <script>
-            ! function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p + "://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, "script", "twitter-wjs");
-        </script>
-    </div>
-    <br>
-    <br id="beforecontactus">
-    <br>
-
-    <!-- Team carrousel
+        <!-- Team carrousel
     <div class="container">
         <div class="col-sm-8 col-centered">
             <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
@@ -187,158 +194,158 @@
     </div>
 //-->
 
-    <!-- CONTACT FORM -->
-    <section class="contactus" id="contactus">
-        <h1>Nimm Kontakt auf</h1>
-        <div class="container contact">
-            <form id="cform" name="contact-form">
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Wie heißt du?</label>
-                    <textarea class="form-control" name="firstname" id="exampleFormControlTextarea1" rows="1" placeholder="Name"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email Addresse</label>
-                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gib hier deine Email Addresse ein">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Hinterlass uns gern eine Nachricht!</label>
-                    <input class="form-control" name="yourmessage" id="exampleFormControlTextarea2" rows="5" placeholder="Was möchtest du gerne los werden...?"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary submitbutton" id="send">Senden</button>
-                <div class="container aftersubmit">
-                    <div>
-                        <p>Vielen Dank! Wir melden uns innerhalb von 24 Stunden.</p>
+        <!-- CONTACT FORM -->
+        <section class="contactus" id="contactus">
+            <h1>Nimm Kontakt auf</h1>
+            <div class="container contact">
+                <form id="cform" name="contact-form">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Wie heißt du?</label>
+                        <textarea class="form-control" name="firstname" id="exampleFormControlTextarea1" rows="1" placeholder="Name"></textarea>
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email Addresse</label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gib hier deine Email Addresse ein">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Hinterlass uns gern eine Nachricht!</label>
+                        <input class="form-control" name="yourmessage" id="exampleFormControlTextarea2" rows="5" placeholder="Was möchtest du gerne los werden...?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submitbutton" id="send">Senden</button>
+                    <div class="container aftersubmit">
+                        <div>
+                            <p>Vielen Dank! Wir melden uns innerhalb von 24 Stunden.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <div class="teamoverlay" id="overlayniko">
+            <br>
+            <br>
+            <span class="close">&times;</span>
+            <img class="profilepicoverlay" src="https://i.imgur.com/NVqmmY4.png" height="40%" width="30%" id="nikoimg">
+            <h2>Niko Gang</h2>
+            <h6>
+                MSc Business Information Management
+            </h6>
+            <h6>
+                *15.11.1993
+            </h6>
+        </div>
+
+        <div class="teamoverlay" id="overlayroos">
+            <br>
+            <br>
+            <span class="close">&times;</span>
+            <img class="profilepicoverlay" src="https://i.imgur.com/tUOJlJU.jpg" height="40%" width="30%" id="roosimg">
+            <h2>Roos Klein Entink</h2>
+            <h6>
+                MSc Business Information Management
+            </h6>
+            <h6>
+                Aus Wijchen
+            </h6>
+        </div>
+
+        <div class="teamoverlay" id="overlaysimonas">
+            <br>
+            <br>
+            <span class="close">&times;</span>
+            <img class="profilepicoverlay" src="https://i.imgur.com/KPk0TNW.jpg" height="40%" width="30%" id="simonasimg">
+            <h2>Simonas Baltenis</h2>
+            <h6>
+                Erasmus University Rotterdam
+            </h6>
+            <h6>
+                Aus Kaunas
+            </h6>
+        </div>
+
+        <div class="teamoverlay" id="overlayrosanne">
+            <br>
+            <br>
+            <span class="close">&times;</span>
+            <img class="profilepicoverlay" src="https://i.imgur.com/aPMZVfC.jpg" height="40%" width="30%" id="rosanneimg">
+            <h2>Rosanne Baars</h2>
+            <h6>
+                MSc Business Information Management
+            </h6>
+            <h6>
+                Aus Rheden
+            </h6>
+        </div>
+
+        <div class="teamoverlay" id="overlaynils">
+            <br>
+            <br>
+            <span class="close">&times;</span>
+            <img class="profilepicoverlay" src="https://i.imgur.com/1jZmOyB.jpg" height="40%" width="30%" id="nilsimg">
+            <h2>Nils Kowitz</h2>
+            <h6>
+                MSc Economics and Business
+            </h6>
+            <h6>
+                Aus Bremen
+            </h6>
+        </div>
+
+        <div class="theteam" id="theteam">
+            <h1>Team</h1>
+            <h4>Diese Website hätten wir nicht innerhalb von 3 Tagen auf die Beine stellen können, hätten wir nicht unser super Team. Klicke auf das jeweilige Profil, um es ein bisschen besser kennen zu lernen.</h4>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row" id="teamgrid">
+                <div class="col-sm-4">
+                    <img class="profilepic" src="https://i.imgur.com/NVqmmY4.png" height="200px" width="200px" border-radius: "50%" id="niko">
+                    <h4>Niko Gang</h4>
                 </div>
-            </form>
-        </div>
-    </section>
-
-    <br>
-    <br>
-
-    <div class="teamoverlay" id="overlayniko">
-        <br>
-        <br>
-        <span class="close">&times;</span>
-        <img class="profilepicoverlay" src="https://i.imgur.com/NVqmmY4.png" height="40%" width="30%" id="nikoimg">
-        <h2>Niko Gang</h2>
-        <h6>
-            MSc Business Information Management
-        </h6>
-        <h6>
-            *15.11.1993
-        </h6>
-    </div>
-
-    <div class="teamoverlay" id="overlayroos">
-        <br>
-        <br>
-        <span class="close">&times;</span>
-        <img class="profilepicoverlay" src="https://i.imgur.com/tUOJlJU.jpg" height="40%" width="30%" id="roosimg">
-        <h2>Roos Klein Entink</h2>
-        <h6>
-            MSc Business Information Management
-        </h6>
-        <h6>
-            Aus Wijchen
-        </h6>
-    </div>
-
-    <div class="teamoverlay" id="overlaysimonas">
-        <br>
-        <br>
-        <span class="close">&times;</span>
-        <img class="profilepicoverlay" src="https://i.imgur.com/KPk0TNW.jpg" height="40%" width="30%" id="simonasimg">
-        <h2>Simonas Baltenis</h2>
-        <h6>
-            Erasmus University Rotterdam
-        </h6>
-        <h6>
-            Aus Kaunas
-        </h6>
-    </div>
-
-    <div class="teamoverlay" id="overlayrosanne">
-        <br>
-        <br>
-        <span class="close">&times;</span>
-        <img class="profilepicoverlay" src="https://i.imgur.com/aPMZVfC.jpg" height="40%" width="30%" id="rosanneimg">
-        <h2>Rosanne Baars</h2>
-        <h6>
-            MSc Business Information Management
-        </h6>
-        <h6>
-            Aus Rheden
-        </h6>
-    </div>
-
-    <div class="teamoverlay" id="overlaynils">
-        <br>
-        <br>
-        <span class="close">&times;</span>
-        <img class="profilepicoverlay" src="https://i.imgur.com/1jZmOyB.jpg" height="40%" width="30%" id="nilsimg">
-        <h2>Nils Kowitz</h2>
-        <h6>
-            MSc Economics and Business
-        </h6>
-        <h6>
-            Aus Bremen
-        </h6>
-    </div>
-
-    <div class="theteam" id="theteam">
-        <h1>Team</h1>
-        <h4>Diese Website hätten wir nicht innerhalb von 3 Tagen auf die Beine stellen können, hätten wir nicht unser super Team. Klicke auf das jeweilige Profil, um es ein bisschen besser kennen zu lernen.</h4>
-    </div>
-
-    <br>
-    <br>
-
-    <div class="container">
-        <div class="row" id="teamgrid">
-            <div class="col-sm-4">
-                <img class="profilepic" src="https://i.imgur.com/NVqmmY4.png" height="200px" width="200px" border-radius: "50%" id="niko">
-                <h4>Niko Gang</h4>
-            </div>
-            <div class="col-sm-4">
-                <img class="profilepic" src="https://i.imgur.com/tUOJlJU.jpg" height="200px" width="200px" id="roos">
-                <h4>Roos Klein Entink</h4>
-            </div>
-            <div class="col-sm-4">
-                <img class="profilepic" src="https://i.imgur.com/KPk0TNW.jpg" height="200px" width="200px" id="simonas">
-                <h4>Simonas Baltenis</h4>
+                <div class="col-sm-4">
+                    <img class="profilepic" src="https://i.imgur.com/tUOJlJU.jpg" height="200px" width="200px" id="roos">
+                    <h4>Roos Klein Entink</h4>
+                </div>
+                <div class="col-sm-4">
+                    <img class="profilepic" src="https://i.imgur.com/KPk0TNW.jpg" height="200px" width="200px" id="simonas">
+                    <h4>Simonas Baltenis</h4>
+                </div>
             </div>
         </div>
-    </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <div class="container">
-        <div class="row" id="teamgrid2">
-            <div class="col-sm-6">
-                <img class="profilepic" src="https://i.imgur.com/aPMZVfC.jpg" height="200px" width="200px" id="rosanne">
-                <h4>Rosanne Baars</h4>
-            </div>
-            <div class="col-sm-6">
-                <img class="profilepic" src="https://i.imgur.com/1jZmOyB.jpg" height="200px" width="200px" id="nils">
-                <h4>Nils Kowitz</h4>
+        <div class="container">
+            <div class="row" id="teamgrid2">
+                <div class="col-sm-6">
+                    <img class="profilepic" src="https://i.imgur.com/aPMZVfC.jpg" height="200px" width="200px" id="rosanne">
+                    <h4>Rosanne Baars</h4>
+                </div>
+                <div class="col-sm-6">
+                    <img class="profilepic" src="https://i.imgur.com/1jZmOyB.jpg" height="200px" width="200px" id="nils">
+                    <h4>Nils Kowitz</h4>
+                </div>
             </div>
         </div>
-    </div>
 
-    <br>
-    <hr>
+        <br>
+        <hr>
 
-    <h6 id="copyright">
-        © I am flying away today 2017. Alle Rechte vorbehalten.
-    </h6>
+        <h6 id="copyright">
+            © I am flying away today 2017. Alle Rechte vorbehalten.
+        </h6>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <!-- Cookie
+        <!-- Cookie
     <div class="container">
 <div class="cookieoverlay" id="cookieoverlayid">
    <br><br>
@@ -361,15 +368,15 @@ This website uses cookies to better the users experience while visiting the webs
 </div>
 <!- End of Cookie //-->
 
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
-    <script src="api.js"></script>
+        <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
+        <script src="api.js"></script>
 </body>
 
 
