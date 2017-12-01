@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    background-color: #F8F6F6;
 }
 
 .overlay img {
@@ -24,7 +25,7 @@ body {
 }
 
 .navbar {
-    background-color: white !important;
+    background-color: #F8F6F6 !important;
     width: 100%;
     z-index: 2;
     border-bottom: #EDEBEB 1px solid;
@@ -32,11 +33,16 @@ body {
 
 .landing {
     position: relative;
-    background-image: url('Images/plane.jpg');
+    background-image: url('http://preview.ibb.co/cdssPb/plane_airplane_passenger_airliner_height_sky_flight_sea_lights_airport_town_night_beautiful_background_blur_bokeh_wallpaper.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
     margin-top: 20px;
+}
+
+#searchinput {
+  position: absolute;
+  padding-top: 80px;
 }
 
 .input-group-btn {
