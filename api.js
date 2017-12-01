@@ -13,7 +13,6 @@ $(() => {
 
 
 
-
     getAllFlights = function() {
         $("#paginator").html("");
         $.ajax({
@@ -54,39 +53,39 @@ $(() => {
     getAllFlightsByPage = function(page) {
         $("#paginator").html("");
         $.ajax({
-                url: "https://api.schiphol.nl/public-flights/flights?app_id=8d8f7e2a&app_key=e8903a8da89481aaf3fc5da7a2faf7bf&scheduledate=2017-12-01&includedelays=false&page=" + page + "&sort=%2Bscheduletime",
-                method: "GET",
-                contentType: "application/json; charset=UTF-8",
-                headers: {
-                    "ResourceVersion": "v3"
-                }
-            }).then(function(data, status, xhr) {
-                console.log(data);
+            url: "https://api.schiphol.nl/public-flights/flights?app_id=8d8f7e2a&app_key=e8903a8da89481aaf3fc5da7a2faf7bf&scheduledate=2017-12-01&includedelays=false&page=" + page + "&sort=%2Bscheduletime",
+            method: "GET",
+            contentType: "application/json; charset=UTF-8",
+            headers: {
+                "ResourceVersion": "v3"
+            }
+        }).then(function(data, status, xhr) {
+            console.log(data);
 
-                var responseHeader = xhr.getResponseHeader('link');
-                var trim = responseHeader.substr(0, responseHeader.indexOf('rel="last"'));
-                var one = trim[trim.length - 6];
-                var two = trim[trim.length - 5];
-                var three = trim[trim.length - 4];
-                var page = one + two + three;
+            var responseHeader = xhr.getResponseHeader('link');
+            var trim = responseHeader.substr(0, responseHeader.indexOf('rel="last"'));
+            var one = trim[trim.length - 6];
+            var two = trim[trim.length - 5];
+            var three = trim[trim.length - 4];
+            var page = one + two + three;
 
-                $("#testas").html("");
-                data.flights.forEach(function(item) {
-                    var html = "<tr><td>" + item.flightName + "</td><td>" + item.scheduleTime + "</td><td>" + item.terminal + "</td><td>" + item.gate + "</td>";
-                    $("#testas").append(html);
-                });
+            $("#testas").html("");
+            data.flights.forEach(function(item) {
+                var html = "<tr><td>" + item.flightName + "</td><td>" + item.scheduleTime + "</td><td>" + item.terminal + "</td><td>" + item.gate + "</td>";
+                $("#testas").append(html);
+            });
 
-                var string = "<nav aria-label='Page navigation example'><ul class='pagination'> <li class='page-item'><a class='page-link' href='#'>Previous</a></li>";
+            var string = "<nav aria-label='Page navigation example'><ul class='pagination'> <li class='page-item'><a class='page-link' href='#'>Previous</a></li>";
 
 
-                for (var i = 1; i <= page; i++) {
-                    string += "<li class='page-item'><a class='page-link' onclick='getAllFlightsByPage(" + i + ");'href='#'>" + i + "</a></li>";
-                    // $("#testas").append(paginator);
-                }
-                string += "</ul></nav>";
-                $("#paginator").append(string);
-            })
-            // success: function(data) {
+            for (var i = 1; i <= page; i++) {
+                string += "<li class='page-item'><a class='page-link' onclick='getAllFlightsByPage(" + i + ");'href='#'>" + i + "</a></li>";
+                // $("#testas").append(paginator);
+            }
+            string += "</ul></nav>";
+            $("#paginator").append(string);
+        })
+        // success: function(data) {
 
         // },
         // success: function(data) {

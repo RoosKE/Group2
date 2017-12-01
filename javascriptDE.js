@@ -32,32 +32,32 @@ $(() => {
     });
 
     $("#cookiebtn").on("click", () => {
-      $("#cookieoverlayid").hide();
+        $("#cookieoverlayid").hide();
     });
 
     //Team starts here //
     $(".close").on("click", () => {
-      $(".teamoverlay").hide();
+        $(".teamoverlay").hide();
     });
 
     $("#niko").on("click", () => {
-      $("#overlayniko").show(500);
+        $("#overlayniko").show(500);
     });
 
     $("#roos").on("click", () => {
-      $("#overlayroos").show(500);
+        $("#overlayroos").show(500);
     });
 
     $("#simonas").on("click", () => {
-      $("#overlaysimonas").show(500);
+        $("#overlaysimonas").show(500);
     });
 
     $("#rosanne").on("click", () => {
-      $("#overlayrosanne").show(500);
+        $("#overlayrosanne").show(500);
     });
 
     $("#nils").on("click", () => {
-      $("#overlaynils").show(500);
+        $("#overlaynils").show(500);
     });
 
 });

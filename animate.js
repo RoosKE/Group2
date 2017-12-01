@@ -1,4 +1,4 @@
-$(()=> {
+$(() => {
 
     $("#click1").click(function(event) {
         event.preventDefault();
@@ -15,13 +15,13 @@ $(()=> {
     $("#click3").click(function(event) {
         event.preventDefault();
         $('html, body').animate({
-        scrollTop: $("#contact").offset().top - 50
+            scrollTop: $("#contact").offset().top - 50
         }, 1000);
     })
     $("#click4").click(function(event) {
         event.preventDefault();
         $('html, body').animate({
-        scrollTop: $("#theteam").offset().top
+            scrollTop: $("#theteam").offset().top
         }, 1000);
     })
 });

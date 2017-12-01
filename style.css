@@ -3,19 +3,16 @@ body {
     height: 100%;
     background-color: #F8F6F6;
 }
-
 .overlay img {
     padding: 8px;
     margin: auto;
 }
-
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 40px;
 }
-
 .header {
     overflow: hidden;
     z-index: 1;
@@ -23,22 +20,18 @@ body {
     top: 0;
     position: fixed;
 }
-
 .navbar {
     background-color: #F8F6F6 !important;
     width: 100%;
     z-index: 2;
     border-bottom: #EDEBEB 1px solid;
 }
-
 #head5 {
-  font-size: 20px;
+    font-size: 20px;
 }
-
 #head5p {
-  font-size: 18px;
+    font-size: 18px;
 }
-
 .landing {
     position: relative;
     background-image: url('http://preview.ibb.co/cdssPb/plane_airplane_passenger_airliner_height_sky_flight_sea_lights_airport_town_night_beautiful_background_blur_bokeh_wallpaper.jpg');
@@ -47,31 +40,25 @@ body {
     height: 60vh;
     margin-top: 20px;
 }
-
 #searchinput {
-  position: absolute;
-  padding-top: 80px;
+    position: absolute;
+    padding-top: 80px;
 }
-
 .input-group-btn {
     background-color: white;
 }
-
 #twitterheader {
-  text-align: center;
-  color: #0084b4;
+    text-align: center;
+    color: #0084b4;
 }
-
 #theteam h4 {
-  color: black;
+    color: black;
 }
-
 #reservationconfirmation {
-  text-align: center;
-  font-size: 14px;
-  padding-right: 570px;
+    text-align: center;
+    font-size: 14px;
+    padding-right: 570px;
 }
-
 .btn-secondary {
     background-color: #EDEBEB;
     height: 50px;
@@ -81,58 +68,48 @@ body {
     height: 50px;
     width: 163px;
 }
-
 .departure {
     background-color: white;
 }
-
 section .departures {
-  b
+    b
 }
-
 p {
     color: #6B5F5F;
     font: 12px "Lucida Grande";
 }
-
 h5 {
     padding-bottom: 10px;
     color: #6B5F5F;
     font: 14px "Lucida Grande";
 }
-
 h4 {
     padding-top: 30px;
     padding-bottom: 10px;
     color: #6B5F5F;
     font: 18px "Lucida Grande";
 }
-
 h1 {
     padding-top: 30px;
     padding-bottom: 10px;
     color: #6B5F5F;
     font: 18px "Lucida Grande";
 }
-
 #searchinput {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
 }
-
 .btn-group {
     position: absolute;
     bottom: 0%;
     left: 5%;
 }
-
 .logo {
     width: 124px;
     height: 44px;
 }
-
 .departures {
     background-color: #EDEBEB !important;
     padding-top: 20px;
@@ -140,32 +117,28 @@ h1 {
     margin-left: 115px;
     margin-right: 115px;
 }
-
-
 /* placeholder of the search bar */
 
 ::-webkit-input-placeholder {
     font-size: 12px;
     color: #EDEBEB;
 }
-
- :-moz-placeholder {
+:-moz-placeholder {
     /* Firefox 18- */
+
     font-size: 12px;
     color: #EDEBEB;
 }
-
- ::-moz-placeholder {
+::-moz-placeholder {
     /* Firefox 19+ */
+
     font-size: 12px;
     color: #EDEBEB;
 }
-
- :-ms-input-placeholder {
+:-ms-input-placeholder {
     font-size: 12px;
     color: #EDEBEB;
 }
-
 #twitter {
     float: inherit;
     font-style: oblique;
@@ -177,14 +150,12 @@ h1 {
     margin-right: auto;
     height: 360px;
 }
-
 /* End of Nils' Twitter Design */
 
 .col-centered {
     float: none;
     margin: auto;
 }
-
 .modal-content {
     margin: auto;
     display: block;
@@ -193,7 +164,6 @@ h1 {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
 }
-
 .modal-content,
 #caption {
     -webkit-animation-name: zoom;
@@ -201,20 +171,16 @@ h1 {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-
 form {
-  display: inline-block;
-  text-align: center;
+    display: inline-block;
+    text-align: center;
 }
-
 .aftersubmit {
     display: none;
 }
-
 .contactus h5 {
     text-align: center;
 }
-
 .contactus {
     text-align: center;
     background-color: #EDEBEB;
@@ -224,21 +190,16 @@ form {
     border-top-left-radius: 100% 450px;
     border-bottom-right-radius: 100% 450px;
 }
-
 #send {
-  background-color: #004E96;
-  border: none;
+    background-color: #004E96;
+    border: none;
 }
-
 .my-error-class {
     color: red;
 }
-
 .my-valid-class {
     color: green;
 }
-
-
 @-webkit-keyframes zoom {
     from {
         -webkit-transform: scale(0)
@@ -247,7 +208,6 @@ form {
         -webkit-transform: scale(1)
     }
 }
-
 @keyframes zoom {
     from {
         transform: scale(0)
@@ -256,48 +216,40 @@ form {
         transform: scale(1)
     }
 }
-
-.col-centered{
-   float: none;
-   margin: 0 auto;
+.col-centered {
+    float: none;
+    margin: 0 auto;
 }
-
 .carousel-caption {
-	background-color: rgba(25, 25, 25, 0.6);
-	width: 30%;
-	margin: auto;
+    background-color: rgba(25, 25, 25, 0.6);
+    width: 30%;
+    margin: auto;
 }
-
 .carousel-caption p {
-  color: white;
+    color: white;
 }
-
 /* Team design */
+
 .theteam {
-  text-align: center;
-  font-size: 30px;
-  width: 70%;
-  margin: auto;
-  color: #0084b4;
+    text-align: center;
+    font-size: 30px;
+    width: 70%;
+    margin: auto;
+    color: #0084b4;
 }
-
 .theteam h4 {
-  font-size: 50%;
+    font-size: 50%;
 }
-
 #teamgrid {
-  color: #0084b4;
+    color: #0084b4;
 }
-
 #teamgrid2 {
-  color: #0084b4;
+    color: #0084b4;
 }
-
 #copyright {
-  float: left;
-  padding-left: 50px;
+    float: left;
+    padding-left: 50px;
 }
-
 .close {
     position: absolute;
     top: 15px;
@@ -307,143 +259,125 @@ form {
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-
 .row {
-  cursor: pointer;
-  transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
 .profilepic {
-  border-radius: 50%;
-  margin: auto;
-  border-style: solid;
-  border-color: #6B5F5F;
-  display: block;
+    border-radius: 50%;
+    margin: auto;
+    border-style: solid;
+    border-color: #6B5F5F;
+    display: block;
 }
-
 .profilepicoverlay {
-  border-style: solid;
-  border-radius: 5%;
+    border-style: solid;
+    border-radius: 5%;
 }
-
 h6 {
-  width: 70%;
-  margin: auto;
+    width: 70%;
+    margin: auto;
 }
-
 h4 {
-  text-align: center;
+    text-align: center;
 }
-
 #niko:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
 #roos:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
 #simonas:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
 #rosanne:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
 #nils:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
-#overlayniko{
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.85);
-  z-index: 5;
-  margin: auto;
-  text-align: center;
-  color: white;
+#overlayniko {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 5;
+    margin: auto;
+    text-align: center;
+    color: white;
 }
-
-#overlayroos{
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.85);
-  z-index: 5;
-  margin: auto;
-  text-align: center;
-  color: white;
+#overlayroos {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 5;
+    margin: auto;
+    text-align: center;
+    color: white;
 }
-
-#overlaysimonas{
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.85);
-  z-index: 5;
-  margin: auto;
-  text-align: center;
-  color: white;
+#overlaysimonas {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 5;
+    margin: auto;
+    text-align: center;
+    color: white;
 }
-
-#overlayrosanne{
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.85);
-  z-index: 5;
-  margin: auto;
-  text-align: center;
-  color: white;
+#overlayrosanne {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 5;
+    margin: auto;
+    text-align: center;
+    color: white;
 }
-
-#overlaynils{
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.85);
-  z-index: 5;
-  margin: auto;
-  text-align: center;
-  color: white;
+#overlaynils {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 5;
+    margin: auto;
+    text-align: center;
+    color: white;
 }
-
 /* End of team design */
-
 /* Cookie design */
 
 #cookieoverlayid {
@@ -455,56 +389,49 @@ h4 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 5;
     margin: auto;
     text-align: center;
 }
-
 .cookietext {
-  width: 60%;
-  margin: auto;
-  color: white;
-  border-style: solid;
+    width: 60%;
+    margin: auto;
+    color: white;
+    border-style: solid;
 }
-
 #cookiebtn {
     margin: auto;
     text-align: center;
 }
-
 @media screen and (max-width: 991px) {
     .navbar-nav li a {
         text-align: center;
         margin-right: 16px;
     }
 }
-
 /* Footer */
-footer{
-  background-color: #EDEBEB;
-  height: 250px;
-  align-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 30px;
+
+footer {
+    background-color: #EDEBEB;
+    height: 250px;
+    align-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
 }
-
-.wrapper1{
-  margin: 0 auto;
-  padding-top: 30px;
+.wrapper1 {
+    margin: 0 auto;
+    padding-top: 30px;
 }
-
-
-.hr{
-  size: 2px;
-  color: #6B5F5F;
-  margin-left: 50px;
-  margin-right: 50px;
+.hr {
+    size: 2px;
+    color: #6B5F5F;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-
-.wrapper2 div{
-  display: inline-block;
-  margin-right: 5px;
+.wrapper2 div {
+    display: inline-block;
+    margin-right: 5px;
 }
 /* END Footer */

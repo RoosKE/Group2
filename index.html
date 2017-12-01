@@ -23,7 +23,7 @@
                 <a class="navbar-brand" href="#"></a>
                 <img class="logo" src="Images/Schiphol_logo.png" alt="Schiphollogo">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
@@ -64,8 +64,9 @@
             </span>
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
-             <button type="button" id="allFlights" class="btn btn-secondary departure">All Flights  <i class="fa fa-search"></i></button>
-         </div>
+            <button type="button" id="allFlights" class="btn btn-secondary departure">All Flights <i class="fa fa-search"></i>
+            </button>
+        </div>
     </div>
     <!-- Here goes our table where we will put API -->
     <section class="container" id="flightsclick">
@@ -104,13 +105,10 @@
         </table>
         <div id="paginator"></div>
     </section>
-    <section class="departures" >
+    <section class="departures">
         <div class="container finddepartures" id="newsclick">
             <h5 id="head5"><strong>What information do you need at Schiphol?</strong></h5>
-            <p id="head5p">Here you can find the most useful information about your flight. You don't have to look for the announcement boards or wait until the system has updated anymore. This website will provide you with the most accurate and up-to-date informaiton.
-                Find the departure time of a flight at Schiphol, by entering the destination, flight number or airline. In the list of results, you will find the most current flight information of the departing flight you are looking for. If you're not
-                satisfied or want to get in touch with Schiphol Airport, you can twitter with #schiphol or send us an request through the contact form. Hopefully you will enjoy the website and we would love to see you again next time you're flying from
-                Schiphol! </p>
+            <p id="head5p">Here you can find the most useful information about your flight. You don't have to look for the announcement boards or wait until the system has updated anymore. This website will provide you with the most accurate and up-to-date informaiton. Find the departure time of a flight at Schiphol, by entering the destination, flight number or airline. In the list of results, you will find the most current flight information of the departing flight you are looking for. If you're not satisfied or want to get in touch with Schiphol Airport, you can twitter with #schiphol or send us an request through the contact form. Hopefully you will enjoy the website and we would love to see you again next time you're flying from Schiphol! </p>
         </div>
 
     </section>
@@ -193,21 +191,28 @@
 //-->
 
     <!-- CONTACT FORM -->
-    <section  id="contact" class="col-sm-10 contactus col-centered">
+    <section id="contact" class="col-sm-10 contactus col-centered">
         <h5>Contact us</h5>
         <div class="container contact">
             <form id="cform" name="contact-form">
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1"><p>Name</p></label>
+                    <label for="exampleFormControlTextarea1">
+                        <p>Name</p>
+                    </label>
                     <textarea class="form-control" name="firstname" id="exampleFormControlTextarea1" rows="1" placeholder="John"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1"><p>Email address</p></label>
+                    <label for="exampleInputEmail1">
+                        <p>Email address</p>
+                    </label>
                     <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1"><p>Please leave your message here!</p></label>
-                    <input class="form-control" name="yourmessage" id="exampleFormControlTextarea2" rows="5" placeholder="Tell us what you are interested in...."></textarea>
+                    <label for="exampleFormControlTextarea1">
+                        <p>Please leave your message here!</p>
+                    </label>
+                    <input class="form-control" name="yourmessage" id="exampleFormControlTextarea2" rows="5" placeholder="Tell us what you are interested in....">
+                    </textarea>
                 </div>
                 <button type="submit" class="btn btn-primary submitbutton" id="send">Send message</button>
                 <div class="container aftersubmit">
@@ -334,78 +339,82 @@
     </div>
 
     <!-- Footer //-->
-        <footer>
-          <div class="wrapper1">
+    <footer>
+        <div class="wrapper1">
             <div class="d-none d-lg-inline-block col-lg-2">
-              <h5>Flights</h5>
-              <a href="#departures"><p>departures</p></a>
-                <a href="#arrivals"><p>arrivals</p></a>
-              <p>transfers</p>
+                <h5>Flights</h5>
+                <a href="#departures">
+                    <p>departures</p>
+                </a>
+                <a href="#arrivals">
+                    <p>arrivals</p>
+                </a>
+                <p>transfers</p>
             </div>
             <div class=" d-none d-lg-inline-block col-lg-3">
-              <h5>Things to do at Schiphol</h5>
-              <p>Shop</p>
-              <p>Eat and drink</p>
-              <p>Services</p>
+                <h5>Things to do at Schiphol</h5>
+                <p>Shop</p>
+                <p>Eat and drink</p>
+                <p>Services</p>
             </div>
             <div class="d-none d-lg-inline-block col-lg-3">
-              <h5>Baggage, check-in & security</h5>
-              <p>Baggage rules</p>
-              <p>Central security</p>
-              <p>Checks on arrivals</p>
+                <h5>Baggage, check-in & security</h5>
+                <p>Baggage rules</p>
+                <p>Central security</p>
+                <p>Checks on arrivals</p>
             </div>
             <div class="d-none d-lg-inline-block col-lg-3">
-              <h5>Schiphol parking</h5>
-              <p>Short-term parking</p>
-              <p>Long-term parking</p>
-              <p>Affiliate parking</p>
+                <h5>Schiphol parking</h5>
+                <p>Short-term parking</p>
+                <p>Long-term parking</p>
+                <p>Affiliate parking</p>
             </div>
-          </div>
-          <hr>
-          <div class="wrapper2">
+        </div>
+        <hr>
+        <div class="wrapper2">
             <div class="col-sm-2">
-              <p>Schiphol 2017</p>
-            </div>
-            <div class="col-sm-2">
-              <p>Privacy</p>
+                <p>Schiphol 2017</p>
             </div>
             <div class="col-sm-2">
-              <p>Schiphol regulations</p>
+                <p>Privacy</p>
             </div>
             <div class="col-sm-2">
-              <p>Disclaimer</p>
+                <p>Schiphol regulations</p>
             </div>
             <div class="col-sm-2">
-              <p>Careers at Schiphol Group</p>
+                <p>Disclaimer</p>
+            </div>
+            <div class="col-sm-2">
+                <p>Careers at Schiphol Group</p>
             </div>
             <div class="col-sm-1">
-              <a href="#contact"><p>Contact</p></a>
+                <a href="#contact">
+                    <p>Contact</p>
+                </a>
             </div>
-          </div>
-        </footer>
+        </div>
+    </footer>
     <!-- End of footer //-->
 
 
     <div class="container">
-<div class="cookieoverlay" id="cookieoverlayid">
-   <br><br>
-<div class="cookietext">
-   <h2>Privacy Policy</h2>
-This privacy policy is for this website [IAmFlyingAwayToday] and served by [IAmFlyingAwayToday] and governs the privacy of its users who choose to use it. <br><br>
+        <div class="cookieoverlay" id="cookieoverlayid">
+            <br>
+            <br>
+            <div class="cookietext">
+                <h2>Privacy Policy</h2> This privacy policy is for this website [IAmFlyingAwayToday] and served by [IAmFlyingAwayToday] and governs the privacy of its users who choose to use it.
+                <br>
+                <br> The policy sets out the different areas where user privacy is concerned and outlines the obligations and requirements of the users, the website and website owners. Furthermore the way this website processes, stores and protects user data and information will also be detailed within this policy.
 
-The policy sets out the different areas where user privacy is concerned and outlines the obligations and requirements of the users, the website and website owners. Furthermore the way this website processes, stores and protects user data and information will also be detailed within this policy.
+                <h2>The Website</h2> This website and its owners take a proactive approach to user privacy and ensure the necessary steps are taken to protect the privacy of its users throughout their visiting experience. This website complies to all UK national laws and requirements for user privacy.
 
-<h2>The Website</h2>
-This website and its owners take a proactive approach to user privacy and ensure the necessary steps are taken to protect the privacy of its users throughout their visiting experience. This website complies to all UK national laws and requirements for user privacy.
-
-<h2>Cookie Policy</h2>
-This website uses cookies to better the users experience while visiting the website. Where applicable this website uses a cookie control system allowing the user on their first visit to the website to allow or disallow the use of cookies on their computer / device. This complies with recent legislation requirements for websites to obtain explicit consent from users before leaving behind or reading files such as cookies on a user’s computer / device.
-</div>
-<br>
-<br>
-<button class="btn btn-primary" id="cookiebtn">I ACCEPT</button>
-</div>
-</div>
+                <h2>Cookie Policy</h2> This website uses cookies to better the users experience while visiting the website. Where applicable this website uses a cookie control system allowing the user on their first visit to the website to allow or disallow the use of cookies on their computer / device. This complies with recent legislation requirements for websites to obtain explicit consent from users before leaving behind or reading files such as cookies on a user’s computer / device.
+            </div>
+            <br>
+            <br>
+            <button class="btn btn-primary" id="cookiebtn">I ACCEPT</button>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
