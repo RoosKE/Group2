@@ -442,3 +442,32 @@ h4 {
         margin-right: 16px;
     }
 }
+
+/* Footer */
+footer{
+  background-color: #EDEBEB;
+  height: 250px;
+  align-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+}
+
+.wrapper1{
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+
+.hr{
+  size: 2px;
+  color: #6B5F5F;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.wrapper2 div{
+  display: inline-block;
+  margin-right: 5px;
+}
+/* END Footer */
