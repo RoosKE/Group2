@@ -1,4 +1,5 @@
 $(() => {
+  $(document).ready(function () {
     $("form[name='contact-form']").validate({
         errorClass: "my-error-class",
         validClass: "my-valid-class",
@@ -59,5 +60,5 @@ $(() => {
     $("#nils").on("click", () => {
       $("#overlaynils").show(500);
     });
-
+});
 });

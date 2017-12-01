@@ -15,7 +15,7 @@ $(()=> {
     $("#click3").click(function(event) {
         event.preventDefault();
         $('html, body').animate({
-        scrollTop: $("#contactus").offset().top - 50
+        scrollTop: $("#contact").offset().top - 50
         }, 1000);
     })
     $("#click4").click(function(event) {
