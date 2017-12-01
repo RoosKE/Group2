@@ -232,10 +232,24 @@ h5 {
   text-align: center;
   width: 70%;
   margin: auto;
+  color: #0084b4;
 }
 
 .theteam h4 {
   font-size: 93%;
+}
+
+#teamgrid {
+  color: #0084b4;
+}
+
+#teamgrid2 {
+  color: #0084b4;
+}
+
+#copyright {
+  float: left;
+  padding-left: 50px;
 }
 
 .close {

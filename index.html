@@ -29,17 +29,15 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">All Flights <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <!--Too little information for delays from API-->
+                        <!--<li class="nav-item">
                             <a class="nav-link" href="delays.html">Delays</a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#theteam">About</a>
                         </li>
                     </ul>
                 </div>
@@ -99,9 +97,9 @@
     </section>
     <section class="departures">
         <div class="container finddepartures">
-            <h5>Current departure times at Schiphol</h5>
-            <p>Find the departure time of a flight at Schiphol, by entering the date, flight number or airline. In the list of results, you will find the most current flight information of the departing flight you are looking for. You can search for departing
-                flights up to 21 days in advance. Of course, the information about the departure time of a flight for today, is the most accurate.</p>
+            <h5>Current departure and arrival times at Schiphol</h5>
+            <p>Find the departure or arrival time of a flight at Schiphol, by entering the date, flight number or airline. In the list of results, you will find the most current flight information of the departing/arriving flight you are looking for. You can search for
+                flights up to 21 days in advance. Of course, the information about the time of a flight for today, is the most accurate.</p>
         </div>
 
     </section>
@@ -171,7 +169,7 @@
 //-->
 
     <!-- CONTACT FORM -->
-    <section class="contactus">
+    <section class="contactus" id="contactus">
         <h1>Contact us</h1>
         <div class="container contact">
             <form id="cform" name="contact-form">
@@ -209,10 +207,13 @@
   <br>
   <br>
   <span class="close">&times;</span>
-  <img class="profilepicoverlay" src="https://i.imgur.com/NVqmmY4.png" height="40%" width="40%" id="nikoimg">
+  <img class="profilepicoverlay" src="https://i.imgur.com/NVqmmY4.png" height="40%" width="30%" id="nikoimg">
   <h2>Niko Gang</h2>
   <h6>
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    MSc Business Information Management
+  </h6>
+  <h6>
+    *15.11.1993
   </h6>
 </div>
 
@@ -220,77 +221,108 @@
   <br>
   <br>
   <span class="close">&times;</span>
-  <img class="profilepicoverlay" src="https://i.imgur.com/tUOJlJU.jpg" height="40%" width="40%" id="roosimg">
-  <h2>Roos</h2>
-  <h6>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h6>
+  <img class="profilepicoverlay" src="https://i.imgur.com/tUOJlJU.jpg" height="40%" width="30%" id="roosimg">
+  <h2>Roos Klein Entink</h2>
+  <h6>
+    MSc Business Information Management
+  </h6>
+  <h6>
+    From Wijchen
+  </h6>
 </div>
 
 <div class="teamoverlay" id="overlaysimonas">
   <br>
   <br>
   <span class="close">&times;</span>
-  <img class="profilepicoverlay" src="https://i.imgur.com/KPk0TNW.jpg" height="40%" width="40%" id="simonasimg">
-  <h2>Simonas</h2>
-  <h6>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h6>
+  <img class="profilepicoverlay" src="https://i.imgur.com/KPk0TNW.jpg" height="40%" width="30%" id="simonasimg">
+  <h2>Simonas Baltenis</h2>
+  <h6>
+    Erasmus University Rotterdam
+  </h6>
+  <h6>
+    From Kaunas
+  </h6>
 </div>
 
 <div class="teamoverlay" id="overlayrosanne">
   <br>
   <br>
   <span class="close">&times;</span>
-  <img class="profilepicoverlay" src="https://i.imgur.com/aPMZVfC.jpg" height="40%" width="40%" id="rosanneimg">
-  <h2>Rosanne</h2>
-  <h6>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h6>
+  <img class="profilepicoverlay" src="https://i.imgur.com/aPMZVfC.jpg" height="40%" width="30%" id="rosanneimg">
+  <h2>Rosanne Baars</h2>
+  <h6>
+    MSc Business Information Management
+  </h6>
+  <h6>
+    From Rheden
+  </h6>
 </div>
 
 <div class="teamoverlay" id="overlaynils">
   <br>
   <br>
   <span class="close">&times;</span>
-  <img class="profilepicoverlay" src="https://i.imgur.com/1jZmOyB.jpg" height="40%" width="40%" id="nilsimg">
-  <h2>Nils</h2>
-  <h6>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h6>
+  <img class="profilepicoverlay" src="https://i.imgur.com/1jZmOyB.jpg" height="40%" width="30%" id="nilsimg">
+  <h2>Nils Kowitz</h2>
+  <h6>
+    MSc Economics and Business
+  </h6>
+  <h6>
+    From Bremen
+  </h6>
 </div>
 
-<div class="theteam">
-<h1>The team</h1>
-<h4>The present flight details could not have been realized without the support of this amazing team. Please click on the respective profiles to get to know them a little bit better - knowing that each and every one of them is amazing, again.</h4>
-</div>
-
-<br>
-
-<div class="container">
-<div class="row" id="teamgrid">
-  <div class="col-sm-4">
-    <img class="profilepic" src="https://i.imgur.com/NVqmmY4.png" height="200px" width="200px" border-radius:"50%" id="niko">
-    <h4>Niko Gang</h4>
-  </div>
-    <div class="col-sm-4">
-    <img class="profilepic" src="https://i.imgur.com/tUOJlJU.jpg" height="200px" width="200px" id="roos">
-    <h4>Roos Klein Entink</h4>
-  </div>
-    <div class="col-sm-4">
-    <img class="profilepic" src="https://i.imgur.com/KPk0TNW.jpg" height="200px" width="200px" id="simonas">
-    <h4>Simonas</h4>
-  </div>
-</div>
+<div class="theteam" id="theteam">
+  <h1>The team</h1>
+  <h4>The present flight details could not have been realized without the support of this amazing team. Please click on the respective profiles to get to know them a little bit better - knowing that each and every one of them is amazing, again.</h4>
 </div>
 
 <br>
 <br>
 
 <div class="container">
-<div class="row" id="teamgrid2">
-  <div class="col-sm-6">
-    <img class="profilepic" src="https://i.imgur.com/aPMZVfC.jpg" height="200px" width="200px" id="rosanne">
-    <h4>Rosanne</h4>
+  <div class="row" id="teamgrid">
+    <div class="col-sm-4">
+      <img class="profilepic" src="https://i.imgur.com/NVqmmY4.png" height="200px" width="200px" border-radius:"50%" id="niko">
+      <h4>Niko Gang</h4>
+    </div>
+    <div class="col-sm-4">
+      <img class="profilepic" src="https://i.imgur.com/tUOJlJU.jpg" height="200px" width="200px" id="roos">
+      <h4>Roos Klein Entink</h4>
+    </div>
+    <div class="col-sm-4">
+      <img class="profilepic" src="https://i.imgur.com/KPk0TNW.jpg" height="200px" width="200px" id="simonas">
+      <h4>Simonas Baltenis</h4>
+    </div>
   </div>
-  <div class="col-sm-6">
-    <img class="profilepic" src="https://i.imgur.com/1jZmOyB.jpg" height="200px" width="200px" id="nils">
-    <h4>Nils</h4>
 </div>
+
+<br>
+<br>
+
+<div class="container">
+  <div class="row" id="teamgrid2">
+    <div class="col-sm-6">
+      <img class="profilepic" src="https://i.imgur.com/aPMZVfC.jpg" height="200px" width="200px" id="rosanne">
+      <h4>Rosanne Baars</h4>
+    </div>
+    <div class="col-sm-6">
+      <img class="profilepic" src="https://i.imgur.com/1jZmOyB.jpg" height="200px" width="200px" id="nils">
+      <h4>Nils Kowitz</h4>
+    </div>
+  </div>
 </div>
-</div>
+
+<br>
+<hr>
+
+<h6 id="copyright">
+  (c) Shiphol Flight Status 2017. All rights reserved.
+</h6>
+
+<br>
+<br>
 
     <!-- End of Niko's test //-->
 
@@ -315,17 +347,17 @@ This website uses cookies to better the users experience while visiting the webs
 <button class="btn btn-primary" id="cookiebtn">I ACCEPT</button>
 </div>
 </div>
-<!-- End of Cookie //-->
+<!- End of Cookie //-->
 
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
-    <script src="api.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+  <script src="api.js"></script>
 </body>
 
 
